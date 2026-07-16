@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YourTeam | iGEM 2026</title>
+  <meta name="description" content="A reusable iGEM Wiki template with glass UI and interactive components.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell" data-nav>
+    <a class="brand" href="index.html" aria-label="Home"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a>
+    <button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="pages/description.html">Project</a>
+      <a href="pages/engineering.html">Engineering</a>
+      <a href="pages/results.html">Results</a>
+      <a href="pages/model.html">Model</a>
+      <a href="pages/safety.html">Safety</a>
+      <a href="pages/human-practices.html">Human Practices</a>
+      <a href="pages/team.html">Team</a>
+      <a href="pages/components.html">Plugins</a>
+    </div>
+    <button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="eyebrow">iGEM 2026 · Synthetic Biology</span>
+        <h1>Project Name</h1>
+        <p class="hero-copy">A clear, evidence-rich Wiki framework for presenting your problem, design, experiments, human practices, safety, modeling, and team story with a polished glass interface.</p>
+        <div class="hero-actions">
+          <a class="button" href="pages/description.html">Explore project</a>
+          <a class="button secondary" href="pages/engineering.html">View engineering cycle</a>
+          <a class="button secondary" href="pages/components.html">Browse plugins</a>
+          <button class="button secondary" data-random-page type="button">Random page</button>
+        </div>
+      </div>
+      <aside class="glass-panel hero-panel" aria-label="Interactive molecular scene">
+        <div class="molecule-stage">
+          <svg viewBox="0 0 400 400" aria-hidden="true">
+            <path d="M78 120 C142 58 246 64 318 112" stroke="rgba(255,255,255,.75)" stroke-width="4" fill="none"/>
+            <path d="M98 288 C156 342 252 336 318 280" stroke="rgba(255,255,255,.72)" stroke-width="4" fill="none"/>
+            <path d="M96 128 L148 276 M306 126 L244 286 M174 94 L212 304" stroke="rgba(255,255,255,.45)" stroke-width="3"/>
+          </svg>
+          <span class="node"></span><span class="node"></span><span class="node"></span><span class="node"></span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="metric-row">
+        <div class="metric" data-reveal><strong data-count="8">0</strong><p>Reusable page types</p></div>
+        <div class="metric" data-reveal><strong data-count="12">0</strong><p>Interactive components</p></div>
+        <div class="metric" data-reveal><strong data-count="4">0</strong><p>Medal-aligned evidence blocks</p></div>
+        <div class="metric" data-reveal><strong data-count="100">0</strong><p>Static-first deployable</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div><span class="eyebrow">Wiki Structure</span><h2>Designed for judging flow.</h2></div>
+        <p>Best Wiki pages usually make the project easy to scan, then reward deeper reading. This structure keeps core iGEM deliverables visible without changing the expected page logic.</p>
+      </div>
+      <div class="grid">
+        <a class="card" data-reveal href="pages/description.html"><span class="badge">01</span><h3>Description</h3><p>Problem, design goal, proposed solution, and why synthetic biology matters.</p></a>
+        <a class="card" data-reveal href="pages/engineering.html"><span class="badge">02</span><h3>Engineering</h3><p>Design-build-test-learn cycles with outcomes and next decisions.</p></a>
+        <a class="card" data-reveal href="pages/results.html"><span class="badge">03</span><h3>Results</h3><p>Figures, claims, controls, conclusions, and remaining uncertainty.</p></a>
+        <a class="card" data-reveal href="pages/human-practices.html"><span class="badge">04</span><h3>Human Practices</h3><p>Stakeholder insights connected directly to project changes.</p></a>
+        <a class="card" data-reveal href="pages/safety.html"><span class="badge">05</span><h3>Safety</h3><p>Risk assessment, lab practice, application boundaries, and responsibility.</p></a>
+        <a class="card" data-reveal href="pages/attributions.html"><span class="badge">06</span><h3>Attributions</h3><p>Clear ownership of every contribution, support source, and asset.</p></a>
+        <a class="card" data-reveal href="pages/components.html"><span class="badge">07</span><h3>Reusable Plugins</h3><p>Interactive wiki blocks for floating navigation, particle motion, evidence filtering, glossary notes, and more.</p></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>YourTeam iGEM 2026</strong><p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p></div>
+    <div class="footer-links"><a href="https://competition.igem.org/" rel="noopener">iGEM Competition</a><a href="https://gitlab.igem.org/" rel="noopener">Repository</a><a href="mailto:team@example.org">Contact</a></div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

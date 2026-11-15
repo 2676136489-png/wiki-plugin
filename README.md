@@ -1,20 +1,52 @@
-﻿# iGEM Glass Wiki Template
+# iGEM Glass Wiki 插件
 
-A reusable, multi-page iGEM-style wiki template with Apple-inspired glass UI, static-first pages, and optional PHP includes for local reuse.
+面向 iGEM 竞赛团队的多页面 Wiki 模板，静态优先架构。19 个页面共用一套设计系统，9 个交互插件各配独立演示页；无构建步骤，可直接在浏览器中打开。
 
-## Open
+## 页面构成
 
-Start with `index.html` in a browser. The static HTML pages work without PHP.
+| 类型 | 数量 | 页面 |
+| --- | --- | --- |
+| 项目页 | 10 | 首页、描述、工程、结果、模型、安全、实践、归属、贡献、协作方式 |
+| 插件演示 | 9 | 全部插件、命令面板、前后对比滑杆、证据筛选卡、悬浮工具坞、术语悬浮注释、磁吸卡片、粒子场背景、滚动叙事 |
 
-## Reusable pieces
+## 本地预览
 
-- `assets/css/style.css`: design system, layout, glass cards, components
-- `assets/js/main.js`: mobile navigation, theme toggle, scroll progress, tabs, accordions, reveal animations, counters
-- `includes/`: optional PHP partials if you later want a PHP-based build
-- `pages/`: competition deliverable pages using one consistent UI
+```bash
+python -m http.server 8000 --bind 127.0.0.1
+```
 
-## Important iGEM notes
+浏览器打开 `http://127.0.0.1:8000/`。
 
-- Keep final content, images, scripts, and styles inside your iGEM GitLab repository.
-- Replace placeholders with your own project evidence, attributions, safety notes, protocols, parts, and references.
-- Preserve attribution and license footer text.
+## 目录结构
+
+```
+index.html              项目首页，含摘要、章节索引与结果概览
+pages/                  19 个页面，项目页与插件演示页并列
+assets/css/dossier.css  项目页设计系统
+assets/css/style.css    插件演示页样式
+assets/js/main.js       导航、目录高亮、标签页、证据筛选与对比滑杆
+assets/fonts/           本地字体
+assets/img/             SVG 插图
+includes/               可选 PHP 片段
+```
+
+## 设计系统
+
+- 配色：近黑深青、冷白纸面、信号青绿。
+- 字体：Noto Sans SC 用于中文，Instrument Serif 用于拉丁标题，Inter 用于插件演示页。
+- 组件：滚动进度条、章节索引、证据筛选、批次图表、标签页与手风琴。
+
+## 交付约束
+
+iGEM 要求全部内容纳入指定 GitLab 仓库，评审在该环境访问页面：
+
+- 无构建步骤，修改 HTML 后可直接提交。
+- 无 CDN 与外部请求，字体、插图与脚本全部位于仓库内。
+- PHP include 为可选项，未启用时页面功能不受影响。
+- 占位内容与待替换素材均标注来源，便于团队交接。
+
+## 素材许可
+
+- 字体：Noto Sans SC、Instrument Serif、Inter，均采用 SIL Open Font License。
+- 插图：SVG 文件，随仓库一并交付。
+- 页面中的项目数据与实验结论为示例内容，交付前替换为团队真实材料。

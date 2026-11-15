@@ -1,48 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Reusable Wiki Plugins | YourTeam</title>
+  <title>插件演示 · 启明团队 | iGEM 2026</title>
+  <meta name="description" content="Wiki 模板中的 8 个交互插件示例，以及通往主站区块插件库的入口。">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
   <div class="progress" data-progress></div>
   <nav class="nav-shell" data-nav>
-    <a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a>
-    <button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button>
+    <a class="brand" href="../index.html" aria-label="Wiki 首页"><span class="brand-mark">启</span><span><strong>启明团队</strong><small>iGEM 2026</small></span></a>
+    <button class="icon-button nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
     <div class="nav-links" data-nav-menu>
-      <a href="description.html">Project</a><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a href="model.html">Model</a><a href="safety.html">Safety</a><a href="human-practices.html">Human Practices</a><a href="team.html">Team</a><a href="components.html">Plugins</a>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">建模</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="team.html">团队</a>
+      <a class="active" href="components.html">插件</a>
     </div>
-    <button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button>
+    <a class="nav-back" href="../../index.html">← 插件库</a>
+    <button class="icon-button" data-theme-toggle aria-label="切换明暗主题">◐</button>
   </nav>
+
   <header class="page-hero">
-    <span class="eyebrow">Reusable UI Kit</span>
-    <h1>Wiki Plugins</h1>
-    <p class="hero-copy">A set of copyable interaction blocks for modern wiki pages: light motion, clear evidence, compact navigation, and responsive static-first design.</p>
+    <span class="eyebrow">可复用 UI 套件 · 演示</span>
+    <h1>Wiki 插件演示</h1>
+    <p class="hero-copy">这些是交互区块在真实 Wiki 页面里的示例。完整版在首页的区块插件库，共 197 个区块，覆盖 35 种设计主义，支持实时预览，并可直接复制源码与中文提示词。</p>
+    <div class="hero-actions">
+      <a class="button" href="../../index.html">打开区块插件库</a>
+      <a class="button secondary" href="plugin-all.html">看组合演示</a>
+    </div>
   </header>
+
   <main>
     <section class="section">
       <div class="grid four">
-        <a class="card compact" data-reveal href="plugin-floating-dock.html"><span class="badge">Float</span><h3>悬浮工具坞</h3><p>适合长页面快速跳转、返回顶部、打开搜索。</p></a>
-        <a class="card compact" data-reveal href="plugin-particles.html"><span class="badge">Motion</span><h3>粒子场背景</h3><p>Canvas 粒子连线，适合 hero 或实验模块头图。</p></a>
-        <a class="card compact" data-reveal href="plugin-scrollytelling.html"><span class="badge">Scroll</span><h3>滚动叙事</h3><p>把工程循环、HP 调研和结果故事做成分段叙事。</p></a>
-        <a class="card compact" data-reveal href="plugin-magnetic-cards.html"><span class="badge">Bento</span><h3>磁吸卡片</h3><p>适合奖项亮点、核心数据、团队分工总览。</p></a>
-        <a class="card compact" data-reveal href="plugin-glossary.html"><span class="badge">Text</span><h3>术语悬浮注释</h3><p>降低阅读门槛，不打断 wiki 正文节奏。</p></a>
-        <a class="card compact" data-reveal href="plugin-comparison.html"><span class="badge">Media</span><h3>前后对比滑杆</h3><p>展示设计迭代、图像分析或原型版本变化。</p></a>
-        <a class="card compact" data-reveal href="plugin-evidence-filter.html"><span class="badge">Data</span><h3>证据筛选卡</h3><p>按实验、模型、安全、HP 筛选页面证据。</p></a>
-        <a class="card compact" data-reveal href="plugin-command-palette.html"><span class="badge">Nav</span><h3>命令面板</h3><p>为复杂 wiki 提供键盘友好的快速入口。</p></a>
+        <a class="card compact" data-reveal href="plugin-floating-dock.html"><span class="badge">悬浮</span><h3>悬浮工具坞</h3><p>适合长页面快速跳转、返回顶部、打开搜索。</p></a>
+        <a class="card compact" data-reveal href="plugin-particles.html"><span class="badge">动效</span><h3>粒子场背景</h3><p>Canvas 粒子连线，适合首屏或实验模块头图。</p></a>
+        <a class="card compact" data-reveal href="plugin-scrollytelling.html"><span class="badge">滚动</span><h3>滚动叙事</h3><p>把工程循环、人类实践与结果故事做成分段叙事。</p></a>
+        <a class="card compact" data-reveal href="plugin-magnetic-cards.html"><span class="badge">卡片</span><h3>磁吸卡片</h3><p>适合奖项亮点、核心数据与团队分工总览。</p></a>
+        <a class="card compact" data-reveal href="plugin-glossary.html"><span class="badge">文字</span><h3>术语悬浮注释</h3><p>降低阅读门槛，不打断正文节奏。</p></a>
+        <a class="card compact" data-reveal href="plugin-comparison.html"><span class="badge">媒体</span><h3>前后对比滑杆</h3><p>展示设计迭代、图像分析或原型版本变化。</p></a>
+        <a class="card compact" data-reveal href="plugin-evidence-filter.html"><span class="badge">数据</span><h3>证据筛选卡</h3><p>按实验、模型、安全与人类实践筛选证据。</p></a>
+        <a class="card compact" data-reveal href="plugin-command-palette.html"><span class="badge">导航</span><h3>命令面板</h3><p>为复杂 Wiki 提供键盘友好的快速入口。</p></a>
       </div>
     </section>
+
     <section class="section">
       <div class="section-head">
-        <div><span class="eyebrow">All-in-one</span><h2>Combined showcase.</h2></div>
-        <p>同一页里放入多个插件，检查它们共存时的层级、动效和响应式表现。</p>
+        <div><span class="eyebrow">主站</span><h2>想要更多区块？</h2></div>
+        <p>主站插件库包含页头、关于、使用方式、标志墙、集成、联系、博客、对比表，以及画廊、轮播、表单、通知等 197 个区块，每个都能实时预览并复制源码。</p>
       </div>
-      <a class="button" href="plugin-all.html">Open combined page</a>
+      <a class="button" href="../../index.html">返回区块插件库 →</a>
     </section>
   </main>
-  <footer class="site-footer"><div><strong>YourTeam iGEM 2026</strong><p>Reusable plugin demos for wiki design.</p></div><div class="footer-links"><a href="../index.html">Home</a><a href="plugin-all.html">All plugins</a></div></footer>
+
+  <footer class="site-footer">
+    <div><strong>启明团队 · iGEM 2026</strong><p>插件演示页面，完整组件库在主站首页。</p></div>
+    <div class="footer-links"><a href="../../index.html">插件库</a><a href="../index.html">Wiki 首页</a><a href="plugin-all.html">组合演示</a></div>
+  </footer>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>

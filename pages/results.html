@@ -1,9 +1,144 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Results | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="description.html">Project</a><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a href="model.html">Model</a><a href="safety.html">Safety</a><a href="human-practices.html">Human Practices</a><a href="team.html">Team</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Evidence</span><h1>Results</h1><p class="hero-copy">Present data with claims, controls, uncertainty, and clear conclusions.</p></header>
-<main class="page-layout"><aside class="toc"><a href="#summary">Summary</a><a href="#figures">Figures</a><a href="#proof">Proof of concept</a><a href="#next">Next steps</a></aside><article class="glass-panel">
-<section id="summary" class="content-section"><h2>Result Summary</h2><div class="grid two"><div class="card"><h3>Main claim</h3><p>State the most important finding in one sentence.</p></div><div class="card"><h3>Confidence</h3><p>Describe controls, repeats, and limitations.</p></div></div></section>
-<section id="figures" class="content-section"><h2>Figures</h2><p>Add final charts as local images with captions. Avoid unsupported claims and explain every axis.</p></section>
-<section id="proof" class="content-section"><h2>Proof of Concept</h2><p>Connect your experimental evidence to the original problem and design goals.</p></section>
-<section id="next" class="content-section"><h2>Next Steps</h2><p>Show what still needs optimization, validation, or stakeholder review.</p></section>
-</article></main><footer class="site-footer"><div><strong>YourTeam iGEM 2026</strong><p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p></div><div class="footer-links"><a href="engineering.html">Engineering</a><a href="model.html">Model</a><a href="../index.html">Home</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>结果 · LUMEN 低氧表达项目</title>
+  <meta name="description" content="低氧表达项目的主要结论、证据索引与批次稳定性。">
+  <link rel="stylesheet" href="../assets/css/dossier.css?v=8">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell">
+    <a class="brand" href="../index.html" aria-label="LUMEN 首页">
+      <span class="brand-mark">L</span>
+      <span><strong>LUMEN</strong><small>低氧表达项目</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html" class="active">结果</a>
+      <a href="model.html">模型</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="attributions.html">归属</a>
+      <a href="contribution.html">贡献</a>
+    </div>
+    <a class="nav-back" href="../../index.html">插件库</a>
+  </nav>
+
+  <header class="page-hero">
+    <span class="page-no">03</span>
+    <h1>结果。</h1>
+    <p class="hero-copy">组合 07 在 2% 氧气下达到基线 3.2 倍，连续 8 个批次稳定。下面给出读数、对照与下一轮验证安排。</p>
+  </header>
+
+  <main class="page-layout">
+    <aside class="toc">
+      <a href="#summary">摘要</a>
+      <a href="#metrics">指标</a>
+      <a href="#evidence">证据</a>
+      <a href="#batches">批次</a>
+      <a href="#next">下一轮</a>
+    </aside>
+    <article>
+      <section id="summary" class="content-section">
+        <span class="sec-no">01</span>
+        <h2>组合 07 在低氧下<br>达到基线 3.2 倍。</h2>
+        <div class="grid two">
+          <article class="card" data-reveal>
+            <span class="badge">主要结论</span>
+            <h3>条件依赖的表达优势</h3>
+            <p>2% 氧气、48 小时读数下，组合 07 的荧光强度显著高于空载对照；常氧下优势缩小到 1.4 倍。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">稳定性</span>
+            <h3>连续 8 批，变异系数低于 6%</h3>
+            <p>位置效应与宿主背景差异已经排除。同一套协议在不同批次之间保持可比。</p>
+          </article>
+        </div>
+        <div class="pullquote">结论要强，读数要能复查。</div>
+      </section>
+
+      <section id="metrics" class="content-section">
+        <span class="sec-no">02</span>
+        <h2>四个核心读数。</h2>
+        <div class="metric-row">
+          <div class="metric"><strong data-count="98.6" data-decimals="1" data-suffix="%">0%</strong><p>表达阳性率</p></div>
+          <div class="metric"><strong data-count="3.2" data-decimals="1" data-suffix="×">0×</strong><p>低氧相对表达</p></div>
+          <div class="metric"><strong data-count="8">0</strong><p>验证批次</p></div>
+          <div class="metric"><strong data-count="6" data-suffix="%">0%</strong><p>变异系数上限</p></div>
+        </div>
+        <p>相对表达以空载对照归一化。阳性定义为荧光强度高于对照均值加三倍标准差。</p>
+      </section>
+
+      <section id="evidence" class="content-section">
+        <span class="sec-no">03</span>
+        <h2>按来源检索结论。</h2>
+        <p>湿实验、模型与人类实践分别记录。标签只切换当前视图，原始读数保持不变。</p>
+        <div class="chip-row" data-filter-group data-filter-target="#resultEvidence">
+          <button class="chip active" data-filter="all">全部</button>
+          <button class="chip" data-filter="wetlab">湿实验</button>
+          <button class="chip" data-filter="model">模型</button>
+          <button class="chip" data-filter="hp">人类实践</button>
+        </div>
+        <div class="evidence-grid" id="resultEvidence">
+          <article class="card" data-category="wetlab"><span class="badge">湿实验</span><h3>表达强度</h3><p>组合 07 在 2% 氧气下达到基线 3.2 倍，n=8。</p></article>
+          <article class="card" data-category="wetlab"><span class="badge">湿实验</span><h3>批次稳定性</h3><p>连续 8 批变异系数低于 6%，保留全部原始读数。</p></article>
+          <article class="card" data-category="model"><span class="badge">模型</span><h3>预测一致性</h3><p>预测与实测相关系数 0.86，极强启动子区间偏差最大。</p></article>
+          <article class="card" data-category="model"><span class="badge">模型</span><h3>敏感性分析</h3><p>启动子强度是主要敏感参数，决定后续文库覆盖范围。</p></article>
+          <article class="card" data-category="hp"><span class="badge">人类实践</span><h3>现场条件确认</h3><p>12 位从业者确认现场氧浓度显著低于实验室条件。</p></article>
+          <article class="card" data-category="hp"><span class="badge">人类实践</span><h3>操作流程修订</h3><p>反馈推动读数步骤压缩为三步，并增加打印版记录表。</p></article>
+        </div>
+      </section>
+
+      <section id="batches" class="content-section">
+        <span class="sec-no">04</span>
+        <h2>八个批次的读数。</h2>
+        <div class="bar-chart" aria-label="八个批次的相对表达强度">
+          <i style="--h:72%"></i><i style="--h:86%"></i><i style="--h:78%"></i><i style="--h:92%"></i><i style="--h:88%"></i><i style="--h:96%"></i><i style="--h:90%"></i><i style="--h:94%"></i>
+        </div>
+        <div class="chart-labels"><span>B01</span><span>B02</span><span>B03</span><span>B04</span><span>B05</span><span>B06</span><span>B07</span><span>B08</span></div>
+        <table class="data-table">
+          <thead><tr><th>批次</th><th>相对表达</th><th>变异系数</th><th>状态</th></tr></thead>
+          <tbody>
+            <tr><td>B01</td><td>2.7×</td><td>5.8%</td><td>通过</td></tr>
+            <tr><td>B02</td><td>2.9×</td><td>4.9%</td><td>通过</td></tr>
+            <tr><td>B03</td><td>2.8×</td><td>5.2%</td><td>通过</td></tr>
+            <tr><td>B04</td><td>3.0×</td><td>4.6%</td><td>通过</td></tr>
+            <tr><td>B05</td><td>2.9×</td><td>5.5%</td><td>通过</td></tr>
+            <tr><td>B06</td><td>3.1×</td><td>4.1%</td><td>通过</td></tr>
+            <tr><td>B07</td><td>3.0×</td><td>4.8%</td><td>通过</td></tr>
+            <tr><td>B08</td><td>3.1×</td><td>4.3%</td><td>通过</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="next" class="content-section">
+        <span class="sec-no">05</span>
+        <h2>下一轮验证。</h2>
+        <ul>
+          <li>把组合 07 放进复杂样本，测试营养限制与竞争菌群下的表达表现。</li>
+          <li>补充中强启动子区间，修正模型在极强区间的系统性偏差。</li>
+          <li>与第二个实验室交换协议与菌株，完成跨实验室复现。</li>
+          <li>启动长期稳定性与水平基因转移评估。</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>LUMEN</strong>
+      <p>结果 · iGEM 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html">档案首页</a>
+      <a href="model.html">下一章：模型 →</a>
+      <a href="../../index.html">插件库</a>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=5"></script>
+</body>
+</html>

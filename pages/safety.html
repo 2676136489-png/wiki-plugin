@@ -1,9 +1,117 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Safety | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="description.html">Project</a><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a href="model.html">Model</a><a href="safety.html">Safety</a><a href="human-practices.html">Human Practices</a><a href="team.html">Team</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Responsibility</span><h1>Safety</h1><p class="hero-copy">Document laboratory safety, organism choices, risk management, and responsible implementation boundaries.</p></header>
-<main class="page-layout"><aside class="toc"><a href="#lab">Lab safety</a><a href="#organisms">Organisms</a><a href="#risks">Risk matrix</a><a href="#implementation">Implementation</a></aside><article class="glass-panel">
-<section id="lab" class="content-section"><h2>Lab Safety</h2><p>Describe training, supervision, biosafety level, PPE, waste handling, and emergency procedures.</p></section>
-<section id="organisms" class="content-section"><h2>Organisms and Parts</h2><p>List chassis, parts, source organisms, hazards, and containment measures.</p></section>
-<section id="risks" class="content-section"><h2>Risk Matrix</h2><div class="grid"><div class="card"><h3>Hazard</h3><p>What could go wrong?</p></div><div class="card"><h3>Likelihood</h3><p>How likely is it?</p></div><div class="card"><h3>Mitigation</h3><p>What reduces the risk?</p></div></div></section>
-<section id="implementation" class="content-section"><h2>Responsible Implementation</h2><p>Explain use conditions, users, disposal, regulation, and environmental boundaries.</p></section>
-</article></main><footer class="site-footer"><div><strong>YourTeam iGEM 2026</strong><p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p></div><div class="footer-links"><a href="human-practices.html">Human Practices</a><a href="attributions.html">Attributions</a><a href="../index.html">Home</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>安全 · LUMEN 低氧表达项目</title>
+  <meta name="description" content="风险矩阵、三层遏制、治理流程与实施边界。">
+  <link rel="stylesheet" href="../assets/css/dossier.css?v=8">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell">
+    <a class="brand" href="../index.html" aria-label="LUMEN 首页">
+      <span class="brand-mark">L</span>
+      <span><strong>LUMEN</strong><small>低氧表达项目</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">模型</a>
+      <a href="safety.html" class="active">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="attributions.html">归属</a>
+      <a href="contribution.html">贡献</a>
+    </div>
+    <a class="nav-back" href="../../index.html">插件库</a>
+  </nav>
+
+  <header class="page-hero">
+    <span class="page-no">05</span>
+    <h1>安全是设计参数。</h1>
+    <p class="hero-copy">菌株选择、实验操作、废弃物处理与潜在应用场景都被写进设计。四项主要风险各有对应控制，三层遏制贯穿构建、操作与记录。</p>
+  </header>
+
+  <main class="page-layout">
+    <aside class="toc">
+      <a href="#matrix">矩阵</a>
+      <a href="#controls">遏制</a>
+      <a href="#governance">治理</a>
+      <a href="#open">下一阶段</a>
+    </aside>
+    <article>
+      <section id="matrix" class="content-section">
+        <span class="sec-no">01</span>
+        <h2>四项主要风险。</h2>
+        <table class="data-table">
+          <thead><tr><th>风险</th><th>可能性</th><th>影响</th><th>控制</th></tr></thead>
+          <tbody>
+            <tr><td><b>非受控环境逃逸</b></td><td>低</td><td>中</td><td>营养缺陷型宿主 + 双重选择标记</td></tr>
+            <tr><td><b>水平基因转移</b></td><td>低</td><td>中</td><td>不携带抗生素抗性基因；使用不可转移载体</td></tr>
+            <tr><td><b>废弃物污染</b></td><td>中</td><td>低</td><td>高温灭活 + 分类回收 + 记录</td></tr>
+            <tr><td><b>未经授权的应用</b></td><td>低</td><td>高</td><td>使用边界声明 + 场景审查</td></tr>
+          </tbody>
+        </table>
+        <p>风险等级由实验记录、文献与机构审查意见共同确定，每季度复核一次。</p>
+      </section>
+
+      <section id="controls" class="content-section">
+        <span class="sec-no">02</span>
+        <h2>三层遏制。</h2>
+        <div class="grid">
+          <article class="card" data-reveal>
+            <span class="badge">层级 01</span>
+            <h3>生物遏制</h3>
+            <p>营养缺陷型宿主在非受控环境中存活时间显著缩短；菌株不携带抗生素抗性基因。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">层级 02</span>
+            <h3>操作遏制</h3>
+            <p>所有操作在受控实验台完成；取样、离心与废弃物处理遵循同一套流程。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">层级 03</span>
+            <h3>记录遏制</h3>
+            <p>每个批次保留菌株来源、构建编号、操作者角色与废弃物去向，随时可以追溯。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="governance" class="content-section">
+        <span class="sec-no">03</span>
+        <h2>谁来决定可以做什么。</h2>
+        <div class="accordion" data-accordion>
+          <div class="accordion-item"><button type="button">什么情况下停止实验？</button><div>出现非预期生长、选择标记失效、废弃物记录缺失或菌株来源不明时，实验立即暂停，直到完成复核。</div></div>
+          <div class="accordion-item"><button type="button">谁有权批准新场景？</button><div>新场景经过机构安全审查与项目内部复核。开放环境测试不在当前阶段范围内。</div></div>
+          <div class="accordion-item"><button type="button">如何处理外部合作？</button><div>合作方获得菌株背景、遏制措施与使用边界说明；材料转移遵循机构规定。</div></div>
+        </div>
+      </section>
+
+      <section id="open" class="content-section">
+        <span class="sec-no">04</span>
+        <h2>下一阶段。</h2>
+        <ul>
+          <li>完成长期演化实验，检查抑制失效或逃逸突变。</li>
+          <li>量化复杂样本中竞争菌群对水平基因转移的影响。</li>
+          <li>统一跨实验室复现时的废弃物处理流程。</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>LUMEN</strong>
+      <p>安全 · iGEM 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html">档案首页</a>
+      <a href="human-practices.html">下一章：实践 →</a>
+      <a href="../../index.html">插件库</a>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=5"></script>
+</body>
+</html>

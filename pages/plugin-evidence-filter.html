@@ -1,5 +1,55 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Evidence Filter Plugin | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="components.html">Plugins</a><a href="plugin-all.html">All</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Plugin 07</span><h1>Evidence Filter</h1><p class="hero-copy">Let judges quickly sort claims by experiment, modeling, safety, or human-practices evidence.</p></header>
-<main class="section"><div class="chip-row" data-filter-group data-filter-target="#evidence"><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="wetlab">Wet Lab</button><button class="chip" data-filter="model">Model</button><button class="chip" data-filter="hp">HP</button></div><div class="evidence-grid" id="evidence"><article class="card" data-category="wetlab"><span class="badge">Wet Lab</span><h3>Fluorescence assay</h3><p>Triplicate measurements with negative control.</p></article><article class="card" data-category="model"><span class="badge">Model</span><h3>Parameter sweep</h3><p>Sensitivity analysis narrowed promoter range.</p></article><article class="card" data-category="hp"><span class="badge">HP</span><h3>Clinic interview</h3><p>Feedback changed deployment constraints.</p></article></div></main>
-<footer class="site-footer"><div><strong>Evidence Filter</strong><p>Small interaction, high judging value.</p></div><div class="footer-links"><a href="plugin-comparison.html">Previous</a><a href="plugin-command-palette.html">Next</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>证据筛选卡 · 插件演示 | 启明团队</title>
+  <meta name="description" content="按实验、模型、安全与人类实践快速筛选证据卡片。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell" data-nav>
+    <a class="brand" href="../index.html" aria-label="Wiki 首页"><span class="brand-mark">启</span><span><strong>启明团队</strong><small>iGEM 2026</small></span></a>
+    <button class="icon-button nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">建模</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="team.html">团队</a>
+      <a class="active" href="components.html">插件</a>
+    </div>
+    <a class="nav-back" href="../../index.html">← 插件库</a>
+    <button class="icon-button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+  </nav>
+
+  <header class="page-hero">
+    <span class="eyebrow">插件 07 · 数据</span>
+    <h1>证据筛选卡</h1>
+    <p class="hero-copy">让评审按来源快速筛选结论：湿实验、模型、安全或人类实践。交互很小，但对长结果页的阅读效率提升明显。</p>
+  </header>
+
+  <main class="section">
+    <div class="chip-row" data-filter-group data-filter-target="#evidence">
+      <button class="chip active" data-filter="all">全部</button>
+      <button class="chip" data-filter="wetlab">湿实验</button>
+      <button class="chip" data-filter="model">模型</button>
+      <button class="chip" data-filter="hp">人类实践</button>
+    </div>
+    <div class="evidence-grid" id="evidence">
+      <article class="card" data-category="wetlab"><span class="badge">湿实验</span><h3>荧光测定</h3><p>三次重复，并设置阴性对照。</p></article>
+      <article class="card" data-category="model"><span class="badge">模型</span><h3>参数扫描</h3><p>敏感性分析缩小了启动子范围。</p></article>
+      <article class="card" data-category="hp"><span class="badge">人类实践</span><h3>现场访谈</h3><p>反馈改变了部署条件与操作步骤。</p></article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>证据筛选卡</strong><p>交互简单，但能显著降低长页面的查找成本。</p></div>
+    <div class="footer-links"><a href="../../index.html">插件库</a><a href="components.html">插件索引</a><a href="plugin-comparison.html">上一个</a><a href="plugin-command-palette.html">下一个</a></div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

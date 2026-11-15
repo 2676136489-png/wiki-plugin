@@ -69,18 +69,48 @@ document.querySelectorAll("[data-accordion]").forEach((accordion) => {
   });
 });
 
+document.querySelectorAll(".toc").forEach((toc) => {
+  const links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+  const sections = links
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+  if (!sections.length) return;
+
+  const update = () => {
+    let current = sections[0];
+    sections.forEach((section) => {
+      if (section.getBoundingClientRect().top < 150) current = section;
+    });
+    links.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === "#" + current.id);
+    });
+  };
+
+  window.addEventListener("scroll", update, { passive: true });
+  update();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    document.querySelector("[data-nav-menu]")?.classList.remove("open");
+  }
+});
+
 const counterObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
       const el = entry.target;
       const value = Number(el.dataset.count || 0);
+      const decimals = Number(el.dataset.decimals || 0);
+      const suffix = el.dataset.suffix || "";
       const duration = 900;
       const start = performance.now();
 
       const tick = (now) => {
         const ratio = Math.min(1, (now - start) / duration);
-        el.textContent = Math.round(value * ratio).toLocaleString();
+        const current = value * ratio;
+        el.textContent = (decimals ? current.toFixed(decimals) : Math.round(current).toLocaleString()) + suffix;
         if (ratio < 1) requestAnimationFrame(tick);
       };
 

@@ -1,6 +1,52 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Floating Dock Plugin | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="components.html">Plugins</a><a href="plugin-all.html">All</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Plugin 01</span><h1>Floating Dock</h1><p class="hero-copy">A compact action dock for long wiki pages. Use it for section jumps, citation search, theme toggle, or back-to-top actions.</p></header>
-<main class="page-layout"><aside class="toc"><a href="#overview">Overview</a><a href="#usage">Usage</a><a href="#content">Demo content</a></aside><article class="glass-panel"><section id="overview" class="content-section"><h2>Overview</h2><p>悬浮工具坞适合信息量大的 wiki 页面，能把常用动作固定在视口边缘，同时不占正文版面。</p></section><section id="usage" class="content-section"><h2>Reusable Pattern</h2><p>复制 <span class="badge">floating-dock</span> 这段结构，再把按钮链接替换成你的页面锚点即可。</p></section><section id="content" class="content-section"><h2>Long-page Test</h2><p>Scroll this page to see the progress bar and dock working together. The dock keeps actions close while the article stays calm and readable.</p><div class="grid two"><div class="card"><h3>Jump</h3><p>Use short symbols for top-level sections.</p></div><div class="card"><h3>Action</h3><p>Open search, toggle theme, or jump to evidence.</p></div></div></section></article></main>
-<div class="floating-dock" aria-label="Floating page actions"><a href="#overview" title="Overview">⌂</a><a href="#usage" title="Usage">◇</a><a href="#content" title="Content">#</a><a href="#" title="Top">↑</a></div>
-<footer class="site-footer"><div><strong>Floating Dock</strong><p>Static, responsive, and safe for wiki pages.</p></div><div class="footer-links"><a href="components.html">Plugins</a><a href="plugin-particles.html">Next</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>悬浮工具坞 · 插件演示 | 启明团队</title>
+  <meta name="description" content="适合长页面的悬浮操作坞，提供章节跳转、返回顶部与快捷操作。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell" data-nav>
+    <a class="brand" href="../index.html" aria-label="Wiki 首页"><span class="brand-mark">启</span><span><strong>启明团队</strong><small>iGEM 2026</small></span></a>
+    <button class="icon-button nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">建模</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="team.html">团队</a>
+      <a class="active" href="components.html">插件</a>
+    </div>
+    <a class="nav-back" href="../../index.html">← 插件库</a>
+    <button class="icon-button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+  </nav>
+
+  <header class="page-hero">
+    <span class="eyebrow">插件 01 · 导航</span>
+    <h1>悬浮工具坞</h1>
+    <p class="hero-copy">为长页面准备的紧凑操作坞。可以放章节跳转、引用搜索、主题切换或返回顶部，不占正文版面。</p>
+  </header>
+
+  <main class="page-layout">
+    <aside class="toc"><a href="#overview">概览</a><a href="#usage">用法</a><a href="#content">演示内容</a></aside>
+    <article class="glass-panel">
+      <section id="overview" class="content-section"><h2>概览</h2><p>悬浮工具坞适合信息量大的 Wiki 页面，能把常用动作固定在视口边缘，同时保持正文安静、可读。</p></section>
+      <section id="usage" class="content-section"><h2>复用方式</h2><p>复制 <span class="badge">floating-dock</span> 这段结构，再把按钮链接替换成你的页面锚点即可。图标建议控制在 4 个以内。</p></section>
+      <section id="content" class="content-section"><h2>长页面测试</h2><p>向下滚动这个页面，观察顶部进度条和右侧工具坞如何协同工作。工具坞让常用动作始终在手边，而正文不需要重复入口。</p><div class="grid two"><div class="card"><h3>跳转</h3><p>用短符号表示顶层章节，悬停显示标题。</p></div><div class="card"><h3>动作</h3><p>打开搜索、切换主题，或跳到证据区块。</p></div></div></section>
+    </article>
+  </main>
+
+  <div class="floating-dock" aria-label="页面快捷操作"><a href="#overview" title="概览">⌂</a><a href="#usage" title="用法">◇</a><a href="#content" title="演示内容">#</a><a href="#" title="返回顶部">↑</a></div>
+
+  <footer class="site-footer">
+    <div><strong>悬浮工具坞</strong><p>静态、响应式，适合直接放进 Wiki 页面。</p></div>
+    <div class="footer-links"><a href="../../index.html">插件库</a><a href="components.html">插件索引</a><a href="plugin-particles.html">下一个</a></div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,9 +1,130 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Description | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="description.html">Project</a><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a href="model.html">Model</a><a href="safety.html">Safety</a><a href="human-practices.html">Human Practices</a><a href="team.html">Team</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Project</span><h1>Description</h1><p class="hero-copy">Explain the problem, the biological idea, the people affected, and the reason your approach is needed.</p></header>
-<main class="page-layout"><aside class="toc"><a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#design">Design goals</a><a href="#impact">Impact</a></aside><article class="glass-panel">
-<section id="problem" class="content-section"><h2>Problem</h2><p>Replace this paragraph with a concise, evidence-based description of the real-world problem. State who is affected, why current solutions are limited, and what measurable gap your project addresses.</p></section>
-<section id="solution" class="content-section"><h2>Proposed Solution</h2><div class="grid two"><div class="card"><h3>Biological function</h3><p>Describe the engineered system, chassis, signal, product, or detection pathway.</p></div><div class="card"><h3>Deployment context</h3><p>Describe where the solution would be used and what constraints shape the design.</p></div></div></section>
-<section id="design" class="content-section"><h2>Design Goals</h2><div data-tabs><div class="tabs"><button class="tab-button active" data-tab="specific">Specific</button><button class="tab-button" data-tab="measurable">Measurable</button><button class="tab-button" data-tab="responsible">Responsible</button></div><div class="tab-panel active" data-panel="specific"><p>Define exactly what the system should do.</p></div><div class="tab-panel" data-panel="measurable"><p>List assays, thresholds, and expected outputs.</p></div><div class="tab-panel" data-panel="responsible"><p>Connect design choices to safety and stakeholder input.</p></div></div></section>
-<section id="impact" class="content-section"><h2>Expected Impact</h2><p>Summarize the scientific, social, environmental, or educational value of your work. Keep claims tied to evidence elsewhere in the Wiki.</p></section>
-</article></main><footer class="site-footer"><div><strong>YourTeam iGEM 2026</strong><p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p></div><div class="footer-links"><a href="attributions.html">Attributions</a><a href="safety.html">Safety</a><a href="../index.html">Home</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>描述 · LUMEN 低氧表达项目</title>
+  <meta name="description" content="低氧表达项目的问题、设计目标、约束与研究路径。">
+  <link rel="stylesheet" href="../assets/css/dossier.css?v=8">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell">
+    <a class="brand" href="../index.html" aria-label="LUMEN 首页">
+      <span class="brand-mark">L</span>
+      <span><strong>LUMEN</strong><small>低氧表达项目</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html" class="active">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">模型</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="attributions.html">归属</a>
+      <a href="contribution.html">贡献</a>
+    </div>
+    <a class="nav-back" href="../../index.html">插件库</a>
+  </nav>
+
+  <header class="page-hero">
+    <span class="page-no">01</span>
+    <h1>低氧条件下的<br>稳定表达。</h1>
+    <p class="hero-copy">肠道、土壤与水体长期处于低氧。项目以 2% 氧气为主验证条件，围绕启动子组合、宿主背景与批次稳定性，建立一套可以复用的表达方案。</p>
+  </header>
+
+  <main class="page-layout">
+    <aside class="toc">
+      <a href="#problem">问题</a>
+      <a href="#design">设计</a>
+      <a href="#constraints">约束</a>
+      <a href="#path">路径</a>
+      <a href="#impact">影响</a>
+    </aside>
+    <article>
+      <section id="problem" class="content-section">
+        <span class="sec-no">01</span>
+        <h2>表达掉下去的地方，<br>才是主场景。</h2>
+        <p>低氧是肠道、土壤与水体的常态。多数工程菌在常氧条件下验证，进入现场后启动子活性、蛋白折叠与代谢负担同时变化，实验室里的高表达很难重现。</p>
+        <p>我们访谈了 12 位一线使用者，问题集中在三件事：现场氧浓度更低、取样条件不稳定、操作时间有限。项目因此把“2% 氧气下仍然稳定”写成第一设计约束。</p>
+        <div class="pullquote">只在常氧成立的曲线，不能支撑现场决策。</div>
+      </section>
+
+      <section id="design" class="content-section">
+        <span class="sec-no">02</span>
+        <h2>三个模块，<br>一套构建逻辑。</h2>
+        <div class="grid">
+          <article class="card" data-reveal>
+            <span class="badge">模块 01</span>
+            <h3>启动子文库</h3>
+            <p>240 个启动子与核糖体结合位点组合，覆盖不同强度区间，建立可比较的筛选空间。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">模块 02</span>
+            <h3>标准组装</h3>
+            <p>统一构建流程与对照设置，减少批次间的操作差异，保留完整构建记录。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">模块 03</span>
+            <h3>批次验证</h3>
+            <p>每批 8 个重复，低氧与常氧双条件读数，记录荧光强度与 OD600。</p>
+          </article>
+        </div>
+        <p>平台以低氧响应启动子为核心变量，用空载、常氧与无启动子三组对照排除位置效应和宿主背景差异。</p>
+      </section>
+
+      <section id="constraints" class="content-section">
+        <span class="sec-no">03</span>
+        <h2>三类约束，<br>决定方案能不能留下。</h2>
+        <div class="tabs" data-tabs>
+          <div class="tab-list">
+            <button class="tab active" data-tab="bio">生物约束</button>
+            <button class="tab" data-tab="ops">操作约束</button>
+            <button class="tab" data-tab="evidence">证据约束</button>
+          </div>
+          <div class="tab-panel active" data-panel="bio"><p>宿主使用非致病背景；启动子组合不引入已知毒力因子；表达提升不以显著生长负担为代价，OD600 在 48 小时内保持可比。</p></div>
+          <div class="tab-panel" data-panel="ops"><p>现场读数不超过三步；取样、校准与废弃物处理能在普通实验台上完成；记录同时保留纸质与电子版本。</p></div>
+          <div class="tab-panel" data-panel="evidence"><p>每个结论至少对应一个独立批次；每批至少 8 个重复；保留空载、常氧与无启动子对照；模型输出与实验读数一起呈现。</p></div>
+        </div>
+      </section>
+
+      <section id="path" class="content-section">
+        <span class="sec-no">04</span>
+        <h2>从访谈走到协议。</h2>
+        <div class="timeline">
+          <div class="timeline-item"><strong>需求访谈</strong><p>确认现场氧浓度、取样条件与操作限制，形成第一批设计约束。</p></div>
+          <div class="timeline-item"><strong>文库设计</strong><p>覆盖启动子强度与核糖体结合位点组合，建立可比较的筛选空间。</p></div>
+          <div class="timeline-item"><strong>低氧验证</strong><p>在 2% 氧气下完成两阶段筛选与 8 个独立批次验证。</p></div>
+          <div class="timeline-item"><strong>协议固化</strong><p>把校准、取样、读数与废弃物处理写进标准化协议。</p></div>
+        </div>
+      </section>
+
+      <section id="impact" class="content-section">
+        <span class="sec-no">05</span>
+        <h2>结果与复用。</h2>
+        <div class="metric-row">
+          <div class="metric"><strong data-count="3.2" data-decimals="1" data-suffix="×">0×</strong><p>相对基线表达</p></div>
+          <div class="metric"><strong data-count="98.6" data-decimals="1" data-suffix="%">0%</strong><p>阳性率</p></div>
+          <div class="metric"><strong data-count="8">0</strong><p>稳定批次</p></div>
+          <div class="metric"><strong data-count="12">0</strong><p>访谈对象</p></div>
+        </div>
+        <p>项目输出包括启动子组合、标准协议、读数模板与页面组件。后续团队可以直接进入宿主适配与场景验证，不必重复基础筛选。</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>LUMEN</strong>
+      <p>描述 · iGEM 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html">档案首页</a>
+      <a href="engineering.html">下一章：工程 →</a>
+      <a href="../../index.html">插件库</a>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=5"></script>
+</body>
+</html>

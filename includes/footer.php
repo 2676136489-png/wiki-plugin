@@ -1,11 +1,12 @@
 ﻿<footer class="site-footer">
   <div>
-    <strong>YourTeam iGEM 2026</strong>
-    <p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p>
+    <strong><?= $site['team'] ?> · iGEM <?= $site['year'] ?></strong>
+    <p>本站内容采用 CC BY 4.0 国际许可协议，另有标注的除外。</p>
   </div>
   <div class="footer-links">
-    <a href="https://competition.igem.org/" rel="noopener">iGEM Competition</a>
-    <a href="https://gitlab.igem.org/" rel="noopener">Repository</a>
-    <a href="mailto:team@example.org">Contact</a>
+    <a href="<?= $site['library'] ?>">插件库</a>
+    <a href="https://competition.igem.org/" rel="noopener">iGEM 竞赛</a>
+    <a href="https://gitlab.igem.org/" rel="noopener">代码仓库</a>
+    <a href="mailto:team@example.org">联系我们</a>
   </div>
 </footer>

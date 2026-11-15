@@ -1,9 +1,120 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contribution | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="description.html">Project</a><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a href="model.html">Model</a><a href="safety.html">Safety</a><a href="human-practices.html">Human Practices</a><a href="team.html">Team</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Reuse</span><h1>Contribution</h1><p class="hero-copy">Explain what future iGEM teams can reuse from your work.</p></header>
-<main class="page-layout"><aside class="toc"><a href="#parts">Parts</a><a href="#protocols">Protocols</a><a href="#software">Software</a><a href="#lessons">Lessons</a></aside><article class="glass-panel">
-<section id="parts" class="content-section"><h2>Parts</h2><p>Document new or improved biological parts and link to registry entries where applicable.</p></section>
-<section id="protocols" class="content-section"><h2>Protocols</h2><p>Share protocols, troubleshooting notes, and validation conditions.</p></section>
-<section id="software" class="content-section"><h2>Software and Design Files</h2><p>Link to local files, code, models, CAD, or analysis notebooks.</p></section>
-<section id="lessons" class="content-section"><h2>Lessons for Future Teams</h2><p>Make the practical learning easy to find.</p></section>
-</article></main><footer class="site-footer"><div><strong>YourTeam iGEM 2026</strong><p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p></div><div class="footer-links"><a href="engineering.html">Engineering</a><a href="../index.html">Home</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>贡献 · LUMEN 低氧表达项目</title>
+  <meta name="description" content="可复用部件、标准协议、软件与页面结构。">
+  <link rel="stylesheet" href="../assets/css/dossier.css?v=8">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell">
+    <a class="brand" href="../index.html" aria-label="LUMEN 首页">
+      <span class="brand-mark">L</span>
+      <span><strong>LUMEN</strong><small>低氧表达项目</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">模型</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="attributions.html">归属</a>
+      <a href="contribution.html" class="active">贡献</a>
+    </div>
+    <a class="nav-back" href="../../index.html">插件库</a>
+  </nav>
+
+  <header class="page-hero">
+    <span class="page-no">08</span>
+    <h1>可以带走的东西。</h1>
+    <p class="hero-copy">启动子组合、标准协议、读数模板与页面组件。后续团队可以直接进入宿主适配与场景验证，不必重复基础筛选。</p>
+  </header>
+
+  <main class="page-layout">
+    <aside class="toc">
+      <a href="#parts">部件</a>
+      <a href="#protocol">协议</a>
+      <a href="#software">软件</a>
+      <a href="#pages">复用</a>
+    </aside>
+    <article>
+      <section id="parts" class="content-section">
+        <span class="sec-no">01</span>
+        <h2>三件可以直接带走的东西。</h2>
+        <div class="grid">
+          <article class="card" data-reveal>
+            <span class="badge">部件 01</span>
+            <h3>启动子组合</h3>
+            <p>240 个组合的构建记录、相对强度与低氧表现。失败组合一并保留，后续团队不必重复筛选。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">部件 02</span>
+            <h3>标准协议</h3>
+            <p>三步读数、校准时点、取样与废弃物处理，全部可以在普通实验台上完成。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">部件 03</span>
+            <h3>读数模板</h3>
+            <p>纸质与电子两个版本，包含样本编号、对照、批次与异常记录字段。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="protocol" class="content-section">
+        <span class="sec-no">02</span>
+        <h2>协议的关键参数。</h2>
+        <table class="data-table">
+          <thead><tr><th>步骤</th><th>参数</th><th>记录</th></tr></thead>
+          <tbody>
+            <tr><td>培养</td><td>2% O2 / 48 h / 37°C</td><td>批次号、起始 OD600</td></tr>
+            <tr><td>读数</td><td>荧光强度 / OD600</td><td>8 个重复、校准时间</td></tr>
+            <tr><td>灭活</td><td>高温灭活 / 分类回收</td><td>废弃物去向、操作角色</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="software" class="content-section">
+        <span class="sec-no">03</span>
+        <h2>页面与组件。</h2>
+        <p>研究档案使用一套可复用的页面结构：指标、时间线、证据筛选、术语注释、对比滑杆、数据表与图表。全部为本地实现，不依赖外部脚本或字体服务。</p>
+        <div class="grid two">
+          <article class="card" data-reveal>
+            <span class="badge">结构</span>
+            <h3>档案模板</h3>
+            <p>封面、章节索引、粘性目录、内容区与页脚，适合长文、数据与证据混合的阅读场景。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">组件</span>
+            <h3>197 个独立设计</h3>
+            <p>页面区块、媒体、按钮、卡片、表单、反馈、导航、动效与数据可视化，覆盖 35 种设计主义。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pages" class="content-section">
+        <span class="sec-no">04</span>
+        <h2>拿走它，改成你的。</h2>
+        <p>页面代码与文案按 CC BY 4.0 复用。打开插件库，可以按分类浏览全部 197 个设计，实时预览并复制源码或中文提示词。</p>
+        <a class="button" href="../../index.html">打开插件库 →</a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>LUMEN</strong>
+      <p>贡献 · iGEM 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html">档案首页</a>
+      <a href="description.html">重新阅读</a>
+      <a href="../../index.html">插件库</a>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=5"></script>
+</body>
+</html>

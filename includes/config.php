@@ -1,9 +1,10 @@
 ﻿<?php
 $site = [
-  "team" => "YourTeam",
+  "team" => "启明团队",
   "year" => "2026",
-  "project" => "Project Name",
-  "tagline" => "A synthetic biology platform designed with responsibility, clarity, and impact.",
-  "base" => ""
+  "project" => "低氧响应型工程菌平台",
+  "tagline" => "让工程菌在真实低氧环境里稳定工作。",
+  "base" => "",
+  "library" => "../index.html"
 ];
 ?>

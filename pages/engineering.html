@@ -1,9 +1,128 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Engineering | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="description.html">Project</a><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a href="model.html">Model</a><a href="safety.html">Safety</a><a href="human-practices.html">Human Practices</a><a href="team.html">Team</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Design · Build · Test · Learn</span><h1>Engineering</h1><p class="hero-copy">A judge-friendly place to show each cycle, the evidence collected, and what changed because of it.</p></header>
-<main class="page-layout"><aside class="toc"><a href="#cycle1">Cycle 1</a><a href="#cycle2">Cycle 2</a><a href="#cycle3">Cycle 3</a><a href="#lessons">Lessons</a></aside><article class="glass-panel">
-<section id="cycle1" class="content-section"><h2>Cycle 1</h2><div class="timeline"><div class="timeline-item"><strong>Design</strong><p>Initial construct, model assumption, or protocol target.</p></div><div class="timeline-item"><strong>Build</strong><p>Assembly strategy, controls, and materials.</p></div><div class="timeline-item"><strong>Test</strong><p>Assay and result summary with figure links.</p></div><div class="timeline-item"><strong>Learn</strong><p>Decision taken before the next cycle.</p></div></div></section>
-<section id="cycle2" class="content-section"><h2>Cycle 2</h2><p>Duplicate this section for more cycles. Keep every claim connected to a result, protocol, or stakeholder need.</p></section>
-<section id="cycle3" class="content-section"><h2>Cycle 3</h2><p>Use concise cards for repeated experiments, then expand important decisions in text.</p></section>
-<section id="lessons" class="content-section"><h2>Lessons Learned</h2><p>Summarize what worked, what failed, and what a future team can reuse.</p></section>
-</article></main><footer class="site-footer"><div><strong>YourTeam iGEM 2026</strong><p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p></div><div class="footer-links"><a href="results.html">Results</a><a href="contribution.html">Contribution</a><a href="../index.html">Home</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>工程 · LUMEN 低氧表达项目</title>
+  <meta name="description" content="三轮工程循环：设计、构建、测试与学习，以及关键设计迭代对比。">
+  <link rel="stylesheet" href="../assets/css/dossier.css?v=8">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell">
+    <a class="brand" href="../index.html" aria-label="LUMEN 首页">
+      <span class="brand-mark">L</span>
+      <span><strong>LUMEN</strong><small>低氧表达项目</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html" class="active">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">模型</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="attributions.html">归属</a>
+      <a href="contribution.html">贡献</a>
+    </div>
+    <a class="nav-back" href="../../index.html">插件库</a>
+  </nav>
+
+  <header class="page-hero">
+    <span class="page-no">02</span>
+    <h1>三轮循环，<br>三次收敛。</h1>
+    <p class="hero-copy">每一轮只回答一个问题。第一轮确认低氧差异真实存在，第二轮把宿主背景纳入变量，第三轮把操作流程压到普通实验台也能完成。</p>
+  </header>
+
+  <main class="page-layout">
+    <aside class="toc">
+      <a href="#cycle1">第一轮</a>
+      <a href="#cycle2">第二轮</a>
+      <a href="#cycle3">第三轮</a>
+      <a href="#compare">设计对比</a>
+      <a href="#lessons">复盘</a>
+    </aside>
+    <article>
+      <section id="cycle1" class="content-section">
+        <span class="sec-no">01</span>
+        <h2>先确认低氧不是噪声。</h2>
+        <p>第一轮构建 240 个启动子与核糖体结合位点组合，在 96 孔板中完成初筛。目标不是找最优组合，而是确认低氧条件下的表达差异是否真实存在。</p>
+        <table class="data-table">
+          <thead><tr><th>指标</th><th>结果</th><th>决策</th></tr></thead>
+          <tbody>
+            <tr><td>构建组合</td><td>240</td><td>保留全部构建记录</td></tr>
+            <tr><td>初筛阳性</td><td>12</td><td>进入复筛</td></tr>
+            <tr><td>低氧保持表达</td><td>2</td><td>组合 07 / 11</td></tr>
+            <tr><td>位置效应</td><td>无法解释差异</td><td>第二轮更换宿主背景</td></tr>
+          </tbody>
+        </table>
+        <p>差异不能由孔位或批次单独解释。第二轮因此引入宿主背景变量，并把重复数提高到 8。</p>
+      </section>
+
+      <section id="cycle2" class="content-section">
+        <span class="sec-no">02</span>
+        <h2>把宿主背景纳入变量。</h2>
+        <p>第二轮在同一组启动子组合下比较两种宿主背景。组合 07 在低氧下达到基线 3.2 倍，常氧下只有 1.4 倍，说明优势来自低氧响应，而不是整体拷贝数增加。</p>
+        <table class="data-table">
+          <thead><tr><th>组合</th><th>低氧相对表达</th><th>常氧相对表达</th><th>生长负担</th></tr></thead>
+          <tbody>
+            <tr><td><b>07</b></td><td>3.2×</td><td>1.4×</td><td>无显著差异</td></tr>
+            <tr><td>11</td><td>2.6×</td><td>1.2×</td><td>无显著差异</td></tr>
+            <tr><td>空载</td><td>1.0×</td><td>1.0×</td><td>基准</td></tr>
+            <tr><td>无启动子</td><td>0.1×</td><td>0.1×</td><td>阴性对照</td></tr>
+          </tbody>
+        </table>
+        <p>相对表达以空载对照归一化；生长负担用 48 小时 OD600 比较，两组宿主都没有出现显著差异。</p>
+      </section>
+
+      <section id="cycle3" class="content-section">
+        <span class="sec-no">03</span>
+        <h2>让协议在普通实验台上成立。</h2>
+        <p>第三轮不再增加组合，而是压缩操作步骤并固化读数协议。取样、校准与记录合并为三步，所有批次使用同一套模板。</p>
+        <table class="data-table">
+          <thead><tr><th>变更</th><th>原因</th><th>结果</th></tr></thead>
+          <tbody>
+            <tr><td>读数步骤压缩为三步</td><td>现场操作时间受限</td><td>平均操作时间下降 32%</td></tr>
+            <tr><td>增加打印版记录表</td><td>现场网络不稳定</td><td>记录缺失率降至 0</td></tr>
+            <tr><td>校准时点固定</td><td>批次间读数漂移</td><td>变异系数低于 6%</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="compare" class="content-section">
+        <span class="sec-no">04</span>
+        <h2>设计迭代对比。</h2>
+        <p>初版只以常氧表达作为主验证。修订版把低氧纳入主筛选，常氧转为对照条件，用来解释响应机制。</p>
+        <div class="compare" data-compare>
+          <div class="compare-layer is-before"><div><span class="badge">初版</span><h2>常氧主验证</h2><p>低氧只作补充说明，筛选结果进入现场后经常失效。</p></div></div>
+          <div class="compare-layer compare-after"><div><span class="badge">修订</span><h2>低氧主验证</h2><p>低氧进入主筛选，常氧用来对照与解释响应机制。</p></div></div>
+          <input type="range" min="10" max="90" value="50" aria-label="对比位置">
+        </div>
+      </section>
+
+      <section id="lessons" class="content-section">
+        <span class="sec-no">05</span>
+        <h2>复盘。</h2>
+        <div class="accordion" data-accordion>
+          <div class="accordion-item"><button type="button">为什么保留失败组合？</button><div>失败组合解释了下一轮为什么调整宿主背景与文库覆盖范围。只保留成功组合，工程循环就失去了因果线索。</div></div>
+          <div class="accordion-item"><button type="button">为什么第三轮不再增加组合？</button><div>第二轮已经确认组合 07 的条件依赖性。继续加组合的收益低于把协议做稳，所以第三轮转向操作可靠性。</div></div>
+          <div class="accordion-item"><button type="button">模型在循环里做什么？</button><div>模型负责排序与重复分配，实验负责确认。偏差会被写成下一轮假设，进入新的构建顺序。</div></div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>LUMEN</strong>
+      <p>工程 · iGEM 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html">档案首页</a>
+      <a href="results.html">下一章：结果 →</a>
+      <a href="../../index.html">插件库</a>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=5"></script>
+</body>
+</html>

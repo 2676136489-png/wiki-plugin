@@ -1,5 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Command Palette Plugin | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="components.html">Plugins</a><a href="plugin-all.html">All</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Plugin 08</span><h1>Command Palette</h1><p class="hero-copy">A modern quick navigator for pages with many sections, figures, and appendices.</p><button class="command-launcher" data-command-open type="button">Search wiki sections</button></header>
-<div class="command-palette" data-command-palette aria-hidden="true"><div class="command-box"><div class="command-top"><input data-command-input type="search" placeholder="Search sections, evidence, pages"><button class="icon-button" data-command-close type="button" aria-label="Close">×</button></div><div class="command-list"><a data-command-action href="description.html"><span>Project description</span><small>Page</small></a><a data-command-action href="engineering.html"><span>Engineering cycle</span><small>Page</small></a><a data-command-action href="results.html"><span>Results evidence</span><small>Page</small></a><a data-command-action href="plugin-evidence-filter.html"><span>Evidence filter demo</span><small>Plugin</small></a></div></div></div>
-<footer class="site-footer"><div><strong>Command Palette</strong><p>Great for dense wiki navigation and hidden utility actions.</p></div><div class="footer-links"><a href="plugin-evidence-filter.html">Previous</a><a href="plugin-all.html">All plugins</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>命令面板 · 插件演示 | 启明团队</title>
+  <meta name="description" content="为章节很多的 Wiki 提供键盘友好的快速导航面板。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell" data-nav>
+    <a class="brand" href="../index.html" aria-label="Wiki 首页"><span class="brand-mark">启</span><span><strong>启明团队</strong><small>iGEM 2026</small></span></a>
+    <button class="icon-button nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">建模</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="team.html">团队</a>
+      <a class="active" href="components.html">插件</a>
+    </div>
+    <a class="nav-back" href="../../index.html">← 插件库</a>
+    <button class="icon-button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+  </nav>
+
+  <header class="page-hero">
+    <span class="eyebrow">插件 08 · 导航</span>
+    <h1>命令面板</h1>
+    <p class="hero-copy">当 Wiki 有很多章节、图表和附录时，一个搜索框比一排导航链接更高效。支持键盘操作，也可以作为隐藏的快捷入口。</p>
+    <button class="command-launcher" data-command-open type="button">搜索 Wiki 章节</button>
+  </header>
+
+  <div class="command-palette" data-command-palette aria-hidden="true">
+    <div class="command-box">
+      <div class="command-top"><input data-command-input type="search" placeholder="搜索章节、证据或页面"><button class="icon-button" data-command-close type="button" aria-label="关闭">×</button></div>
+      <div class="command-list">
+        <a data-command-action href="description.html"><span>项目描述</span><small>页面</small></a>
+        <a data-command-action href="engineering.html"><span>工程循环</span><small>页面</small></a>
+        <a data-command-action href="results.html"><span>结果证据</span><small>页面</small></a>
+        <a data-command-action href="plugin-evidence-filter.html"><span>证据筛选演示</span><small>插件</small></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div><strong>命令面板</strong><p>适合信息密集的 Wiki 与隐藏的快捷操作。</p></div>
+    <div class="footer-links"><a href="../../index.html">插件库</a><a href="components.html">插件索引</a><a href="plugin-evidence-filter.html">上一个</a><a href="plugin-all.html">组合演示</a></div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

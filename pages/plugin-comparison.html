@@ -1,5 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Comparison Slider Plugin | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="components.html">Plugins</a><a href="plugin-all.html">All</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Plugin 06</span><h1>Before / After Slider</h1><p class="hero-copy">A comparison module for prototypes, microscopy masks, model refinement, and interface iterations.</p></header>
-<main class="section"><div class="compare" data-compare><div class="compare-layer"><div><span class="badge">Before</span><h2>Initial prototype</h2><p>Lower contrast, unclear labels, and weaker evidence hierarchy.</p></div></div><div class="compare-layer compare-after"><div><span class="badge">After</span><h2>Refined prototype</h2><p>Sharper claims, grouped controls, and better scan paths.</p></div></div><input type="range" min="10" max="90" value="50" aria-label="Comparison position"></div></main>
-<footer class="site-footer"><div><strong>Comparison Slider</strong><p>Uses a range input, so it remains understandable on touch screens.</p></div><div class="footer-links"><a href="plugin-glossary.html">Previous</a><a href="plugin-evidence-filter.html">Next</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>前后对比滑杆 · 插件演示 | 启明团队</title>
+  <meta name="description" content="拖动滑杆对比原型前后状态，适合设计迭代与图像分析。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell" data-nav>
+    <a class="brand" href="../index.html" aria-label="Wiki 首页"><span class="brand-mark">启</span><span><strong>启明团队</strong><small>iGEM 2026</small></span></a>
+    <button class="icon-button nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html">建模</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="team.html">团队</a>
+      <a class="active" href="components.html">插件</a>
+    </div>
+    <a class="nav-back" href="../../index.html">← 插件库</a>
+    <button class="icon-button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+  </nav>
+
+  <header class="page-hero">
+    <span class="eyebrow">插件 06 · 媒体</span>
+    <h1>前后对比滑杆</h1>
+    <p class="hero-copy">适合展示原型迭代、显微图像分割、模型精修或界面版本变化。用一个滑杆把“修改前”和“修改后”放在同一块画布上。</p>
+  </header>
+
+  <main class="section">
+    <div class="compare" data-compare>
+      <div class="compare-layer is-before"><div><span class="badge">修改前</span><h2>初始原型</h2><p>对比度偏低、标签不清楚，证据层级不明显。</p></div></div>
+      <div class="compare-layer compare-after"><div><span class="badge">修改后</span><h2>精修原型</h2><p>主张更清楚、控件分组更合理，阅读路径更顺。</p></div></div>
+      <input type="range" min="10" max="90" value="50" aria-label="对比位置">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>前后对比滑杆</strong><p>使用原生 range 输入，触屏设备也能直接拖动。</p></div>
+    <div class="footer-links"><a href="../../index.html">插件库</a><a href="components.html">插件索引</a><a href="plugin-glossary.html">上一个</a><a href="plugin-evidence-filter.html">下一个</a></div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

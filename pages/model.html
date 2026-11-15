@@ -1,9 +1,125 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Model | YourTeam</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><div class="progress" data-progress></div>
-<nav class="nav-shell" data-nav><a class="brand" href="../index.html"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a><button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button><div class="nav-links" data-nav-menu><a href="description.html">Project</a><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a href="model.html">Model</a><a href="safety.html">Safety</a><a href="human-practices.html">Human Practices</a><a href="team.html">Team</a></div><button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button></nav>
-<header class="page-hero"><span class="eyebrow">Prediction · Decision Support</span><h1>Model</h1><p class="hero-copy">Use modeling to explain assumptions, guide experiments, and interpret results.</p></header>
-<main class="page-layout"><aside class="toc"><a href="#question">Question</a><a href="#assumptions">Assumptions</a><a href="#simulation">Simulation</a><a href="#design">Design impact</a></aside><article class="glass-panel">
-<section id="question" class="content-section"><h2>Modeling Question</h2><p>What decision did the model help your team make?</p></section>
-<section id="assumptions" class="content-section"><h2>Assumptions</h2><div class="accordion" data-accordion><button type="button">Parameters and sources</button><div class="accordion-panel"><p>List parameter values, literature sources, and measured estimates.</p></div><button type="button">Sensitivity</button><div class="accordion-panel"><p>Show which assumptions matter most.</p></div></div></section>
-<section id="simulation" class="content-section"><h2>Simulation</h2><p>Embed static figures or interactive plots generated from local files.</p></section>
-<section id="design" class="content-section"><h2>Design Impact</h2><p>Explain how the model changed your wet-lab or implementation plan.</p></section>
-</article></main><footer class="site-footer"><div><strong>YourTeam iGEM 2026</strong><p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p></div><div class="footer-links"><a href="results.html">Results</a><a href="engineering.html">Engineering</a><a href="../index.html">Home</a></div></footer><script src="../assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>模型 · LUMEN 低氧表达项目</title>
+  <meta name="description" content="模型的假设、敏感性、验证与对实验设计的影响。">
+  <link rel="stylesheet" href="../assets/css/dossier.css?v=8">
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <nav class="nav-shell">
+    <a class="brand" href="../index.html" aria-label="LUMEN 首页">
+      <span class="brand-mark">L</span>
+      <span><strong>LUMEN</strong><small>低氧表达项目</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
+    <div class="nav-links" data-nav-menu>
+      <a href="description.html">描述</a>
+      <a href="engineering.html">工程</a>
+      <a href="results.html">结果</a>
+      <a href="model.html" class="active">模型</a>
+      <a href="safety.html">安全</a>
+      <a href="human-practices.html">实践</a>
+      <a href="attributions.html">归属</a>
+      <a href="contribution.html">贡献</a>
+    </div>
+    <a class="nav-back" href="../../index.html">插件库</a>
+  </nav>
+
+  <header class="page-hero">
+    <span class="page-no">04</span>
+    <h1>模型只回答<br>一个问题。</h1>
+    <p class="hero-copy">下一轮先把构建次数花在哪里。模型比较启动子强度、宿主背景与氧气浓度的相对影响，输出的是验证顺序，而不是一个漂亮的预测值。</p>
+  </header>
+
+  <main class="page-layout">
+    <aside class="toc">
+      <a href="#question">问题</a>
+      <a href="#assumptions">假设</a>
+      <a href="#sensitivity">敏感性</a>
+      <a href="#validation">验证</a>
+      <a href="#decisions">决策</a>
+    </aside>
+    <article>
+      <section id="question" class="content-section">
+        <span class="sec-no">01</span>
+        <h2>先验证什么，<br>重复多少。</h2>
+        <p>模型判断三个变量中哪一项对低氧表达影响最大，据此安排下一轮构建顺序。它不预测“最终能表达多少”，只回答先做什么、做几次、哪些组合可以延后。</p>
+        <div class="pullquote">模型的输出，必须改变下一轮的构建顺序。</div>
+      </section>
+
+      <section id="assumptions" class="content-section">
+        <span class="sec-no">02</span>
+        <h2>四个假设。</h2>
+        <table class="data-table">
+          <thead><tr><th>假设</th><th>依据</th><th>风险</th></tr></thead>
+          <tbody>
+            <tr><td>启动子强度可加性</td><td>初筛数据</td><td>强启动子区间可能饱和</td></tr>
+            <tr><td>宿主背景影响为乘性</td><td>两种宿主比较</td><td>未覆盖第三种宿主</td></tr>
+            <tr><td>氧气浓度影响单调</td><td>2% 与常氧两组</td><td>中间浓度未采样</td></tr>
+            <tr><td>批次差异服从同一分布</td><td>8 批重复</td><td>跨实验室可能失效</td></tr>
+          </tbody>
+        </table>
+        <p>四个假设全部保留在模型文档里。后续实验如果推翻了其中一条，模型会随新数据重建，而不是维护旧结论。</p>
+      </section>
+
+      <section id="sensitivity" class="content-section">
+        <span class="sec-no">03</span>
+        <h2>启动子强度最敏感。</h2>
+        <div class="bar-chart" aria-label="参数敏感性">
+          <i style="--h:92%"></i><i style="--h:54%"></i><i style="--h:38%"></i><i style="--h:22%"></i>
+        </div>
+        <div class="chart-labels"><span>启动子</span><span>宿主</span><span>氧气</span><span>批次</span></div>
+        <p>启动子强度决定后续文库覆盖范围，宿主背景次之。氧气浓度与批次差异影响较小，但仍保留在模型里，用于解释批次波动。</p>
+      </section>
+
+      <section id="validation" class="content-section">
+        <span class="sec-no">04</span>
+        <h2>验证。</h2>
+        <div class="accordion" data-accordion>
+          <div class="accordion-item"><button type="button">为什么留出完整批次？</button><div>随机拆分同一批次会高估模型性能。留出完整批次更接近真实使用场景，也更容易暴露批次间差异。</div></div>
+          <div class="accordion-item"><button type="button">相关系数 0.86 说明什么？</button><div>0.86 足够用于排序，最终结论仍由批次读数确认。模型输出与实验读数一起出现，不单独构成结论。</div></div>
+          <div class="accordion-item"><button type="button">偏差怎么处理？</button><div>偏差被写成下一轮假设。极强启动子区间的系统性偏差，直接推动了第二轮文库覆盖范围的调整。</div></div>
+        </div>
+      </section>
+
+      <section id="decisions" class="content-section">
+        <span class="sec-no">05</span>
+        <h2>模型改变了三件事。</h2>
+        <div class="grid">
+          <article class="card" data-reveal>
+            <span class="badge">决策 01</span>
+            <h3>扩大中强启动子区间</h3>
+            <p>敏感性分析显示中强区间仍有未采样空间，第二轮增加了对应组合。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">决策 02</span>
+            <h3>每批重复提升到 8</h3>
+            <p>批次差异虽小，但在低表达区会放大不确定性，因此提高重复数。</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="badge">决策 03</span>
+            <h3>先验证宿主背景</h3>
+            <p>宿主影响高于氧气浓度，第三轮优先完成宿主适配，再增加氧气梯度。</p>
+          </article>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>LUMEN</strong>
+      <p>模型 · iGEM 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html">档案首页</a>
+      <a href="safety.html">下一章：安全 →</a>
+      <a href="../../index.html">插件库</a>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=5"></script>
+</body>
+</html>

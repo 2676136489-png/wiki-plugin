@@ -1,85 +1,132 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YourTeam | iGEM 2026</title>
-  <meta name="description" content="A reusable iGEM Wiki template with glass UI and interactive components.">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>LUMEN · 低氧表达项目</title>
+  <meta name="description" content="在 2% 氧气下构建稳定表达的启动子组合、批次验证与可复用页面。">
+  <link rel="stylesheet" href="assets/css/dossier.css?v=8">
 </head>
 <body>
   <div class="progress" data-progress></div>
-  <nav class="nav-shell" data-nav>
-    <a class="brand" href="index.html" aria-label="Home"><span class="brand-mark">YG</span><span><strong>YourTeam</strong><small>iGEM 2026</small></span></a>
-    <button class="icon-button nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span></button>
+  <nav class="nav-shell">
+    <a class="brand" href="index.html" aria-label="LUMEN 首页">
+      <span class="brand-mark">L</span>
+      <span><strong>LUMEN</strong><small>低氧表达项目</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="打开菜单"><span></span><span></span></button>
     <div class="nav-links" data-nav-menu>
-      <a href="pages/description.html">Project</a>
-      <a href="pages/engineering.html">Engineering</a>
-      <a href="pages/results.html">Results</a>
-      <a href="pages/model.html">Model</a>
-      <a href="pages/safety.html">Safety</a>
-      <a href="pages/human-practices.html">Human Practices</a>
-      <a href="pages/team.html">Team</a>
-      <a href="pages/components.html">Plugins</a>
+      <a href="pages/description.html">描述</a>
+      <a href="pages/engineering.html">工程</a>
+      <a href="pages/results.html">结果</a>
+      <a href="pages/model.html">模型</a>
+      <a href="pages/safety.html">安全</a>
+      <a href="pages/human-practices.html">实践</a>
+      <a href="pages/attributions.html">归属</a>
+      <a href="pages/contribution.html">贡献</a>
     </div>
-    <button class="icon-button" data-theme-toggle aria-label="Toggle theme">◐</button>
+    <a class="nav-back" href="../index.html">插件库</a>
   </nav>
 
   <main>
-    <section class="hero">
-      <div>
-        <span class="eyebrow">iGEM 2026 · Synthetic Biology</span>
-        <h1>Project Name</h1>
-        <p class="hero-copy">A clear, evidence-rich Wiki framework for presenting your problem, design, experiments, human practices, safety, modeling, and team story with a polished glass interface.</p>
-        <div class="hero-actions">
-          <a class="button" href="pages/description.html">Explore project</a>
-          <a class="button secondary" href="pages/engineering.html">View engineering cycle</a>
-          <a class="button secondary" href="pages/components.html">Browse plugins</a>
-          <button class="button secondary" data-random-page type="button">Random page</button>
+    <section class="cover">
+      <div class="cover-main">
+        <p class="hero-kicker">LUMEN · iGEM 2026</p>
+        <h1><em>Low oxygen.</em>稳定表达。</h1>
+        <p class="cover-lede">肠道、土壤与水体长期处于低氧。我们用 240 个启动子组合，筛出在 2% 氧气下仍然稳定的表达方案，再用 8 个独立批次把它确认下来。</p>
+        <div class="cover-actions">
+          <a class="button" href="pages/description.html">阅读项目</a>
+          <a class="button secondary" href="#results">查看结果</a>
         </div>
       </div>
-      <aside class="glass-panel hero-panel" aria-label="Interactive molecular scene">
-        <div class="molecule-stage">
-          <svg viewBox="0 0 400 400" aria-hidden="true">
-            <path d="M78 120 C142 58 246 64 318 112" stroke="rgba(255,255,255,.75)" stroke-width="4" fill="none"/>
-            <path d="M98 288 C156 342 252 336 318 280" stroke="rgba(255,255,255,.72)" stroke-width="4" fill="none"/>
-            <path d="M96 128 L148 276 M306 126 L244 286 M174 94 L212 304" stroke="rgba(255,255,255,.45)" stroke-width="3"/>
-          </svg>
-          <span class="node"></span><span class="node"></span><span class="node"></span><span class="node"></span>
-        </div>
-      </aside>
+      <div class="cover-visual" aria-hidden="true">
+        <div class="oxygen-axis"></div>
+        <div class="oxygen-orb"></div>
+        <div class="oxygen-scale"><b>2%</b><span>O₂</span></div>
+      </div>
     </section>
 
-    <section class="section">
-      <div class="metric-row">
-        <div class="metric" data-reveal><strong data-count="8">0</strong><p>Reusable page types</p></div>
-        <div class="metric" data-reveal><strong data-count="12">0</strong><p>Interactive components</p></div>
-        <div class="metric" data-reveal><strong data-count="4">0</strong><p>Medal-aligned evidence blocks</p></div>
-        <div class="metric" data-reveal><strong data-count="100">0</strong><p>Static-first deployable</p></div>
+    <section class="section" id="results">
+      <div class="impact-top">
+        <div class="impact-number">
+          <strong>3.2×</strong>
+          <span>2% 氧气下的相对表达</span>
+        </div>
+        <div class="impact-copy">
+          <h2>低氧不是补充条件，<br>是主场景。</h2>
+          <p>组合 07 在 2% 氧气下达到基线 3.2 倍，在常氧下只有 1.4 倍。表达优势来自低氧响应，而不是拷贝数或宿主背景的偶然差异。</p>
+        </div>
       </div>
+      <div class="batch-chart" aria-label="八个批次的相对表达强度">
+        <i style="--h:72%"></i><i style="--h:86%"></i><i style="--h:78%"></i><i style="--h:92%"></i><i style="--h:88%"></i><i style="--h:96%"></i><i style="--h:90%"></i><i style="--h:94%"></i>
+      </div>
+      <div class="chart-labels"><span>B01</span><span>B02</span><span>B03</span><span>B04</span><span>B05</span><span>B06</span><span>B07</span><span>B08</span></div>
     </section>
 
     <section class="section">
       <div class="section-head">
-        <div><span class="eyebrow">Wiki Structure</span><h2>Designed for judging flow.</h2></div>
-        <p>Best Wiki pages usually make the project easy to scan, then reward deeper reading. This structure keeps core iGEM deliverables visible without changing the expected page logic.</p>
+        <h2>三步，<br>收紧变量。</h2>
+        <p>从文库到批次，每一步只改变一个变量。读数、对照与构建记录保持同一套格式。</p>
       </div>
-      <div class="grid">
-        <a class="card" data-reveal href="pages/description.html"><span class="badge">01</span><h3>Description</h3><p>Problem, design goal, proposed solution, and why synthetic biology matters.</p></a>
-        <a class="card" data-reveal href="pages/engineering.html"><span class="badge">02</span><h3>Engineering</h3><p>Design-build-test-learn cycles with outcomes and next decisions.</p></a>
-        <a class="card" data-reveal href="pages/results.html"><span class="badge">03</span><h3>Results</h3><p>Figures, claims, controls, conclusions, and remaining uncertainty.</p></a>
-        <a class="card" data-reveal href="pages/human-practices.html"><span class="badge">04</span><h3>Human Practices</h3><p>Stakeholder insights connected directly to project changes.</p></a>
-        <a class="card" data-reveal href="pages/safety.html"><span class="badge">05</span><h3>Safety</h3><p>Risk assessment, lab practice, application boundaries, and responsibility.</p></a>
-        <a class="card" data-reveal href="pages/attributions.html"><span class="badge">06</span><h3>Attributions</h3><p>Clear ownership of every contribution, support source, and asset.</p></a>
-        <a class="card" data-reveal href="pages/components.html"><span class="badge">07</span><h3>Reusable Plugins</h3><p>Interactive wiki blocks for floating navigation, particle motion, evidence filtering, glossary notes, and more.</p></a>
+      <div class="step-list">
+        <article class="step" data-reveal>
+          <span>01</span>
+          <h3>建库</h3>
+          <p>240 个启动子与核糖体结合位点组合，统一组装流程，保留全部构建记录。</p>
+        </article>
+        <article class="step" data-reveal>
+          <span>02</span>
+          <h3>筛选</h3>
+          <p>2% 氧气下完成两阶段筛选，组合 07 与 11 进入复筛，07 的表达优势最稳定。</p>
+        </article>
+        <article class="step" data-reveal>
+          <span>03</span>
+          <h3>验证</h3>
+          <p>8 个独立批次，每批 8 个重复，变异系数控制在 6% 以内。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section is-dark">
+      <div class="section-head">
+        <h2>八个章节，<br>一条证据链。</h2>
+        <p>从问题到复用，按证据顺序阅读。每一章都保留原始读数、对照设置与关键决策。</p>
+      </div>
+      <div class="chapter-list">
+        <a class="chapter" href="pages/description.html"><b>01</b><h3>描述</h3><p>问题、设计目标、约束与研究路径。</p><span>→</span></a>
+        <a class="chapter" href="pages/engineering.html"><b>02</b><h3>工程</h3><p>三轮循环，以及每次结果如何改变下一轮。</p><span>→</span></a>
+        <a class="chapter" href="pages/results.html"><b>03</b><h3>结果</h3><p>主要结论、批次稳定性与下一轮验证。</p><span>→</span></a>
+        <a class="chapter" href="pages/model.html"><b>04</b><h3>模型</h3><p>假设、敏感性、验证与构建顺序。</p><span>→</span></a>
+        <a class="chapter" href="pages/safety.html"><b>05</b><h3>安全</h3><p>风险矩阵、三层遏制与实施边界。</p><span>→</span></a>
+        <a class="chapter" href="pages/human-practices.html"><b>06</b><h3>实践</h3><p>访谈、工作坊与六项设计修改。</p><span>→</span></a>
+        <a class="chapter" href="pages/attributions.html"><b>07</b><h3>归属</h3><p>角色分工、外部支持与素材来源。</p><span>→</span></a>
+        <a class="chapter" href="pages/contribution.html"><b>08</b><h3>贡献</h3><p>可复用的部件、协议、软件与页面。</p><span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section reuse">
+      <div class="reuse-inner">
+        <div>
+          <h2>197 个可复用设计，<br>都在插件库。</h2>
+          <p>页面区块、组件与中文提示词，全部本地化。每个设计都可以实时预览，并直接复制源码。</p>
+        </div>
+        <a class="button dark" href="../index.html">打开插件库 →</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div><strong>YourTeam iGEM 2026</strong><p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p></div>
-    <div class="footer-links"><a href="https://competition.igem.org/" rel="noopener">iGEM Competition</a><a href="https://gitlab.igem.org/" rel="noopener">Repository</a><a href="mailto:team@example.org">Contact</a></div>
+    <div class="footer-brand">
+      <strong>LUMEN</strong>
+      <p>低氧表达项目 · iGEM 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="pages/description.html">描述</a>
+      <a href="pages/results.html">结果</a>
+      <a href="pages/contribution.html">贡献</a>
+      <a href="../index.html">插件库</a>
+    </div>
   </footer>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=5"></script>
 </body>
 </html>
